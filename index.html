@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ProCoder- Heaven for Programmer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+  <header/>
+
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">ProCoder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Topics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.w3schools.com/html/">Web Development</a></li>
+                  <!-- <a href="https://www.w3schools.com/html/"></a> -->
+                  <li><a class="dropdown-item" href="https://www.ibm.com/topics/blockchain">Block Chain</a></li>
+                  <li><a class="dropdown-item" href="#">Support</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Write Your Experience For Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LogInModal">Log In</button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignUpModal ">Sign Up</button>
+             
+            </div>
+          </div>
+        </div>
+      </nav>
+     
+
+<!-- Login Modal -->
+<div class="modal fade" id="LogInModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="LogInModal">Login to ProCoder </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">LogIn</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+<!--Sign up Modal -->
+<div class="modal fade" id="SignUpModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="SignUpModal ">Get an ProCoder Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Sign Up</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<content>
+   <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="first.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Welcome To ProCoder</h2>
+              <p>Technology Newes , Development & Trends.</p>
+              <button class="btn btn-danger">Development</button>
+              <button class="btn btn-primary">BlockChain</button>
+              <button class="btn btn-success">Tech Fun</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Seconddd.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Welcome To My Programmi9ng</h2>
+                <p>Technology Newes , Development & Trends.</p>
+                <button class="btn btn-danger">Development</button>
+                <button class="btn btn-primary">BlockChain</button>
+                <button class="btn btn-success">Tech Fun</button>
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Welcome To The Best Coding Blog</h2>
+                <p>Technology Newes , Development & Trends.</p>
+                <button class="btn btn-danger">Development</button>
+                <button class="btn btn-primary">BlockChain</button>
+                <button class="btn btn-success">Tech Fun</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</content>
+	
+   
+  <div class="container">
+
+    <div class="text-center">
+  <h1 class="my-4 text-danger">PATH TO SOFTWARE ENGINEERING WITH ProCoder</h1>
+</div>
+  
+  
+    <div class="row">
+  
+      <div class="col-md-5">
+        <img class="img-fluid" src="about.jpg" alt="">
+      </div>
+  
+      <div class="col-md-7">
+       <p class="text-white bg-dark">AI education is fundamental to the next generation and critical to Texas’ future,” said Shawdee Monroe, Google’s Tech Education Outreach Lead. “Students need access to the tools and training necessary to help them both shape the future of this technology and create a more just and equitable world. Our hope is to enable them to be creators rather than solely consumers of AI.In-person students will work and learn alongside their instructors and peers. They will often have the opportunity to attend Chicago-based networking events and workshops. Attending In-person is the best option for Veterans and military spouses who live in the Chicago area or who would like to relocate to Chicago. .</p>
+        <h3 class="my-3">Project Details</h3>
+        <ul>
+           <li> Web development</li>
+		   <li> Blockchain</li>
+		   <li>Python </li>
+		   <li>React developer</li>
+        </ul>
+		 <button type="button" class="btn btn-primary">Explore</button>
+      </div>
+  
+    </div>
+	
+ <div class="bg-secondary p-3 mt-5">
+	
+    <div class="text-center">
+   <h1 class="my-4 text-danger">OUR GALLERY</h1>
+</div>
+<div class="container mt-3 d-flex justify-content-evenly">
+  
+  <img src="gallery8.jpg" class="float-start" alt="Paris" width="304" height="236"> 
+   <img src="gallery5.jpg" class="float-end" alt="Paris" width="304" height="236"> 
+   <img src="gallery4.jpg" class="float-end" alt="Paris" width="304" height="236"> 
+    <img src="gallery3.jpg" class="float-end" alt="Paris" width="304" height="236"> 
+  
+</div>
+
+ 
+<div class="container mt-3 d-flex justify-content-evenly">
+  
+  <img src="gallery7.jpg" class="float-start" alt="Paris" width="304" height="236"> 
+   <img src="gallery6.jpg" class="float-end" alt="Paris" width="304" height="236"> 
+   <img src="gallery2.jpg" class="float-end" alt="Paris" width="304" height="236"> 
+    <img src="gallery1.jpg" class="float-end" alt="Paris" width="304" height="236">
+  
+</div>
+</div>
+</div>
+<div class="text-center my-4">
+
+   <button type="button" class="btn btn-danger"bs-btn-line-height: 15px;>Visit</button>
+</div>
+
+<footer class="bd-footer py-5 mt-5 bg-light">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="Bootstrap">
+           <img src="logo.jpg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>ProCoder</title>
+            <span class="fs-5">ProCoder</span>
+          </a>
+          <ul class="list-unstyled small text-muted">
+            <li class="mb-2 text-decoration-none">Designed and built with all the love in the world by the <a href="#">ProCoder team</a> with the help of <a href="#">our contributors</a>.</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Links</h5>
+          <ul class="list-unstyled text-decoration-none">
+            <li class="mb-2"><a href="/">Home</a></li>
+            <li class="mb-2"><a href="#">Docs</a></li>
+            <li class="mb-2"><a href="#">Examples</a></li>
+            <li class="mb-2"><a href="#">Themes</a></li>
+            <li class="mb-2"><a href="#">Blog</a></li>
+           
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Guides</h5>
+          <ul class="list-unstyled text-decoration-none">
+            <li class="mb-2"><a href="#">Getting started</a></li>
+            <li class="mb-2"><a href="#">Starter template</a></li>
+            <li class="mb-2"><a href="#">Webpack</a></li>
+            <li class="mb-2"><a href="#">Parcel</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Projects</h5>
+          <ul class="list-unstyled text-decoration-none">
+            <li class="mb-2"><a href="#">Bootstrap 5</a></li>
+            <li class="mb-2"><a href="#">Bootstrap 4</a></li>
+            <li class="mb-2"><a href="#">Icons</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Community</h5>
+          <ul class="list-unstyled text-decoration-none">
+            <li class="mb-2"><a href="#">Issues</a></li>
+            <li class="mb-2"><a href="#">Discussions</a></li>
+            <li class="mb-2"><a href="#">Corporate sponsors</a></li>
+            <li class="mb-2"><a href="#">Open Collective</a></li>
+            <li class="mb-2"><a href="#">Stack Overflow</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
